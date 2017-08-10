@@ -22,7 +22,7 @@ Design and implement an elevator control system. What data structures, interface
 * When the priority queue is empty the elevator will go into a steady state and change the direction if there are requests in the opposite direction.
 * I used two priority queues to differentiate the pickup requests and transfer requests. The time complexity for insertion is O(logN). While time complexity of search is O(N). I can further optimize search complexity and can reduce it to O(logN)
 * Users are allowed to predefine their destinations so that we can schedule them in a better way.
-* This algorithm is at least better than FCFS because it takes pickup request's direction into considering whether an elevator should pick up the request or not.
+* This algorithm is at least better than FCFS because it takes pickup request's direction into considering whether an elevator should pick up the request or not. In this way, elevator travels less distance compare to the worst cases of FCFS algorithm. So that waiting time of the passanger will reduce.
 * This system can serve multiple requests concurrently by adding more then one elevators.
 
 ### Improvements
